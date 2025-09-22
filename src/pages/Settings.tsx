@@ -372,6 +372,7 @@ const getSettingTabsConfiguration = (
       DELIMETER,
       toSection('Performance', <RocketLaunchIcon className={ICON_CLASSNAME} />),
       toInput(SettingInputType.CHECKBOX, 'showTokensPerSecond'),
+      toInput(SettingInputType.CHECKBOX, 'cachePrompt'),
 
       /* Reasoning */
       DELIMETER,

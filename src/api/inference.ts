@@ -243,9 +243,13 @@ class InferenceApiProvider {
       model: !this.config.model ? null : this.config.model,
       messages: apiMessages,
       stream: true,
-      cache_prompt: true,
-      timings_per_token: !!this.config.showTokensPerSecond,
     };
+    if (this.config.cachePrompt) {
+      params = Object.assign(params, { cache_prompt: true });
+    }
+    if (this.config.showTokensPerSecond) {
+      params = Object.assign(params, { timings_per_token: true });
+    }
 
     // advanced options
     if (this.config.overrideGenerationOptions)

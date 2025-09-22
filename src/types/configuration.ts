@@ -18,6 +18,7 @@ export interface Configuration {
   /* conversations */
   pasteLongTextToFileLen: number;
   pdfAsImage: boolean;
+  cachePrompt: boolean;
   showTokensPerSecond: boolean;
   showThoughtInProgress: boolean;
   excludeThoughtOnReq: boolean;

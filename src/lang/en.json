@@ -43,6 +43,10 @@
         "label": "Use PDF as image instead of text",
         "note": "Attach PDF as image instead of text. Supported only with multimodal models with vision support."
       },
+      "cachePrompt": {
+        "label": "Cache the prompt",
+        "note": "Ask the server to cache the prompt."
+      },
       "showTokensPerSecond": {
         "label": "Show performance metrics",
         "note": "Enable to see processing speed, timings, etc."
