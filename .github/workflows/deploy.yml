@@ -21,7 +21,7 @@ jobs:
         if: ${{ !startsWith(github.ref, 'refs/tags/') }}
         run: |
           echo "Dispatched from ${{github.ref}} — skipping deploy"
-          exit 1
+          exit 0
 
       - uses: actions/checkout@v4
 
